@@ -5,9 +5,9 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["unleash-dotnet-sample.csproj", "./"]
+COPY ["unleash-dotnet-sample/unleash-dotnet-sample.csproj", "./"]
 RUN dotnet restore "unleash-dotnet-sample.csproj"
-COPY . .
+COPY unleash-dotnet-sample/ .
 WORKDIR "/src/"
 RUN dotnet build "unleash-dotnet-sample.csproj" -c Release -o /app/build
 
