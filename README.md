@@ -14,7 +14,7 @@ Sample .Net Core API, using [Unleash](https://github.com/Unleash/unleash) as a f
 
 1. After cloning this repository go into the `src` directory and run `docker-compose up`.
 
-2. Access [http://localhost:4242/](http://localhost/4242/) to create and manage feature flags.
+2. Access [http://localhost:4242/](http://localhost:4242/) to create and manage feature flags.
 
       Use the following credentials to login:
 
